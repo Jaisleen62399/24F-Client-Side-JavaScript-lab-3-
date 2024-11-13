@@ -18,3 +18,55 @@ h1 {
 #car-image img:hover {
   transform: scale(1.1);
 }
+#controls button {
+  background-color: #9214af;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+#controls button:hover {
+  background-color: #2980b9;
+}
+
+#controls button#change-color {
+  background-color: #f39c12; /* Yellow for the color change button */
+}
+
+#controls button#change-color:hover {
+  background-color: #e67e22; /* Darker yellow on hover */
+}
+
+#car-info {
+  margin-top: 20px;
+}
+
+#car-info button {
+  margin: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  transition: background-color 0.3s;
+}
+
+#car-info button:hover {
+  background-color: #2ecc71;
+}
+
+/* Highlight the stock text */
+#car-info .stock {
+  font-size: 18px; /* Make the text a little larger */
+  font-weight: bold; /* Make it bold */
+  color: #e74c3c; /* Red color to highlight */
+  background-color: #f9e6e6; /* Light background to make it pop */
+  padding: 5px 10px; /* Padding for better spacing */
+  border-radius: 5px; /* Rounded corners */
+}
