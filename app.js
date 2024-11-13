@@ -18,4 +18,34 @@ function ToyCar(model, brand, scale, color, dimensions, material, price, feature
     this.packaging = packaging;
     this.toyFeatures = toyFeatures;
     this.customerRating = customerRating;
+   // Method to update stock
+    this.addStock = function(quantity) {
+      this.stock += quantity;
+    };
   
+    // Method to decrease stock
+    this.outOfStock = function(quantity) {
+      this.stock = Math.max(0, this.stock - quantity); // Ensures stock doesn't go below zero
+    };
+  }
+  
+  // Initialize the Ford Mustang GT car object
+  const fordMustangGT = new ToyCar(
+    "1965 Ford Mustang GT",
+    "Jada Toys",
+    "1:24",
+    "Red",
+    { length: 18, width: 8, height: 6 },
+    "Die-cast metal",
+    24.99,
+    ["Opening doors", "Working headlights", "Rubber tires"],
+    10,
+    1965,
+    250,
+    "China",
+    "Sports car",
+    ["Red", "Blue", "Black"],
+    "Boxed",
+    ["Lights", "Sound effects"],
+    4.5
+  );
